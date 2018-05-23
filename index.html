@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        <title>Pizza Menu</title>
+        
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+	</head>
+	<body>
+		<div class="container">
+		    <div id="menu-form">
+                <h1>Pizza Menu</h1>
+
+                <!--Size-->
+                <h3 class="option-header">Size:</h3>
+                <div id="option-options" class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-secondary active">
+                        <input data-cost="6" type="radio" name="size" autocomplete="off" value="Personal" checked> Personal
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input data-cost="10" type="radio" name="size" autocomplete="off" value="Medium"> Medium
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input data-cost="14" type="radio" name="size" autocomplete="off" value="Large"> Large
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input data-cost="16" type="radio" name="size" autocomplete="off" value="Extra Large"> Extra Large
+                    </label>
+                </div>
+
+                <!--Meat-->
+                <h3 class="option-header">Meat:</h3>
+                <div id="meat-options" class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-secondary active">
+                        <input data-cost="1" type="checkbox" name="meat" autocomplete="off" value="Pepperoni" checked > Pepperoni
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input data-cost="1" type="checkbox" name="meat" autocomplete="off" value="Sausage"> Sausage
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input data-cost="1" type="checkbox" name="meat" autocomplete="off" value="Canadian Bacon"> Canadian Bacon
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input data-cost="1" type="checkbox" name="meat" autocomplete="off" value="Ground Beef"> Ground Beef
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input data-cost="1" type="checkbox" name="meat" autocomplete="off" value="Anchovy"> Anchovy
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input data-cost="1" type="checkbox" name="meat" autocomplete="off" value="Chicken"> Chicken
+                    </label>
+                </div>
+
+                <!--Veggies-->
+                <h3 class="option-header">Veggies:</h3>
+                <div id="veggies-options" class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-secondary">
+                        <input data-cost="1" type="checkbox" name="veggies" autocomplete="off" value="Tomatoes"> Tomatoes
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input data-cost="1" type="checkbox" name="veggies" autocomplete="off" value="Onions"> Onions
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input data-cost="1"type="checkbox" name="veggies" autocomplete="off" value="Olives"> Olives
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input data-cost="1" type="checkbox" name="veggies" autocomplete="off" value="Green Peppers"> Green Peppers
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input data-cost="1" type="checkbox" name="veggies" autocomplete="off" value="Mushrooms"> Mushrooms
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input data-cost="1" type="checkbox" name="veggies" autocomplete="off" value="Pineapple"> Pineapple
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input data-cost="1" type="checkbox" name="veggies" autocomplete="off" value="Spinach"> Spinach
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input data-cost="1" type="checkbox" name="veggies" autocomplete="off" value="Jalapeno"> Jalapeno
+                    </label>
+                </div>
+
+                <!--Cheese-->
+                <h3 class="option-header">Cheese:</h3>
+                <div id="cheese-options" class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-secondary active">
+                        <input data-cost="0" type="radio" name="cheese" autocomplete="off" value="Regular" checked> Regular
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input data-cost="0" type="radio" name="cheese" autocomplete="off" value="No cheese"> No cheese
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input data-cost="3" type="radio" name="cheese" autocomplete="off" value="Extra Cheese"> Extra Cheese
+                    </label>
+                </div>
+
+                <!--Crust-->
+                <h3 class="option-header">Crust:</h3>
+                <div id="crust-options" class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-secondary active">
+                        <input data-cost="0" type="radio" name="crust" autocomplete="off" value="Plain Crust" checked> Plain Crust
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input data-cost="0" type="radio" name="crust" autocomplete="off" value="Garlic Butter Crust"> Garlic Butter Crust
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input data-cost="3" type="radio" name="crust" autocomplete="off" value="Cheese Stuffed Crust"> Cheese Stuffed Crust
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input data-cost="0" type="radio" name="crust" autocomplete="off" value="Spicy Crust"> Spicy Crust
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input data-cost="0" type="radio" name="crust" autocomplete="off" value="House Special Crust"> House Special Crust
+                    </label>
+                </div>
+
+                <!--Sauce-->
+                <h3 class="option-header">Sauce:</h3>
+                <div id="sauce-options" class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-secondary active">
+                        <input data-cost="0" type="radio" name="sauce" autocomplete="off" value="Marinara sauce" checked> Marinara sauce
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input data-cost="0" type="radio" name="sauce" autocomplete="off" value="White sauce"> White sauce
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input data-cost="0" type="radio" name="sauce" autocomplete="off" value="Barbeque sauce"> Barbeque sauce
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input data-cost="0" type="radio" name="sauce" autocomplete="off" value="No Sauce"> No Sauce
+                    </label>
+                </div>
+
+                <h3 id="place-order">Place Order</h3>
+                <input class="btn btn-primary" type="submit" value="Order" onclick="placeOrder()">
+
+                <div id="order" style="margin-top: 3rem; visibility: hidden;">
+                    <div class="row">
+                        <label id="itemText" class="col-9">This is a Item</label>
+                        <label id="costText" class="col-3">And this is a price</label>
+                    </div>
+                    <div class="row">
+                        <label id="totalText" class="totalText col-9"><h3>Total Cost:</h3></label>
+                        <label id="totalCost" class="totalCost col-3"></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Fuctionality JavaScript-->
+        <script  src="mainJavaScript.js"></script>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    </body>
+</html>
