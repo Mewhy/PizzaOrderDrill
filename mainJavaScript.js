@@ -1,45 +1,28 @@
-function placeOrder(){
+function placeOrder(itemText,costText,totalCost,types){
     itemText = '';
     costText = '';
     totalCost = 0;
-    types = ['size','meat','veggies','cheese','crust','sauce']
-    getOrder(itemText,costText,totalCost,types);
-}
-
-function getOrder(itemText,costText,totalCost,types){
+    types = ['size','meat','veggie','cheese','crust','sauce']
     for (i = 0; i < types.length; i++){
         var options = document.getElementsByName(types[i]);
-        var come = 0;
-        var cove = 0;
+        var comp = 0;
         for (j = 0; j < options.length; j++) { 
             if(options[j].checked == true){
                 itemText = itemText + options[j].value + "<br/>";
                 costText = costText + "$" + options[j].getAttribute("data-cost") + ".00" + "<br/>";
                 totalCost = totalCost + Number(options[j].getAttribute("data-cost"));
-                console.log(options[j]);
-                if(options[j].getAttribute("name") == 'meat'){
-                    come++;
-                }
-                if(options[j].getAttribute("name") == 'veggies'){
-                    cove++;
+                setname = options[j].getAttribute("name");
+                if(setname == 'meat' || setname == 'veggie'){
+                    comp++;
                 }
             }
         }
-        if(come >= 1){
-            itemText = itemText + "One complementary meat selection" + "<br/>";
-            costText = costText + "-$1.00" + "<br/>";
-            totalCost = totalCost - 1;
-        }
-        if(cove >= 1){
-            itemText = itemText + "One complementary veggie selection" + "<br/>";
+        if(comp >= 1){
+            itemText = itemText + "One complementary " + types[i] + " selection" + "<br/>";
             costText = costText + "-$1.00" + "<br/>";
             totalCost = totalCost - 1;
         }
     }
-    totals(itemText,costText,totalCost);
-}
-
-function totals(itemText,costText,totalCost){
     document.getElementById("itemText").innerHTML = itemText;
     document.getElementById("costText").innerHTML = costText;
     document.getElementById("totalCost").innerHTML = "<h3>" + "$" + totalCost + ".00" + "</h3>";
